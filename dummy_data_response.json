@@ -1,0 +1,480 @@
+{
+  "description": "Simulation response and state log representing the complete flow of seeding and synchronizing dummy data in the Attendance System.",
+  "timestamp": "2026-06-01T16:51:11+05:30",
+  "initial_state_hive": {
+    "clockInOutDataBox": {
+      "31-05-2026": [
+        {
+          "type": "in",
+          "time": 1777669200000,
+          "lat": "23.23825",
+          "long": "69.68097",
+          "isSync": false
+        },
+        {
+          "type": "out",
+          "time": 1777716000000,
+          "lat": "23.23983",
+          "long": "69.68378",
+          "isSync": false
+        }
+      ],
+      "01-06-2026": [
+        {
+          "type": "in",
+          "time": 1777717800000,
+          "lat": "23.23825",
+          "long": "69.68097",
+          "isSync": false
+        },
+        {
+          "type": "out",
+          "time": 1777719600000,
+          "lat": "23.23983",
+          "long": "69.68378",
+          "isSync": false
+        }
+      ],
+      "is_clocked_in": false
+    },
+    "locationDataBox": {
+      "31-05-2026": {
+        "location": [
+          {
+            "date": "31-05-2026",
+            "time": 1777669200000,
+            "lat": 23.23825,
+            "long": 69.68097
+          },
+          {
+            "date": "31-05-2026",
+            "time": 1777670100000,
+            "lat": 23.23835,
+            "long": 69.68107
+          },
+          {
+            "date": "31-05-2026",
+            "time": 1777671000000,
+            "lat": 23.23845,
+            "long": 69.68117
+          },
+          {
+            "date": "31-05-2026",
+            "time": 1777671900000,
+            "lat": 23.23855,
+            "long": 69.68127
+          },
+          {
+            "date": "31-05-2026",
+            "time": 1777672800000,
+            "lat": 23.23865,
+            "long": 69.68137
+          },
+          {
+            "date": "31-05-2026",
+            "time": 1777673700000,
+            "lat": 23.23875,
+            "long": 69.68147
+          },
+          {
+            "date": "31-05-2026",
+            "time": 1777674600000,
+            "lat": 23.23885,
+            "long": 69.68157
+          }
+        ]
+      },
+      "01-06-2026": {
+        "location": [
+          {
+            "date": "01-06-2026",
+            "time": 1777680900000,
+            "lat": 23.23825,
+            "long": 69.68097
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777681800000,
+            "lat": 23.23835,
+            "long": 69.68107
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777682700000,
+            "lat": 23.23845,
+            "long": 69.68117
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777683600000,
+            "lat": 23.23855,
+            "long": 69.68127
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777684500000,
+            "lat": 23.23865,
+            "long": 69.68137
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777685400000,
+            "lat": 23.23875,
+            "long": 69.68147
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777686300000,
+            "lat": 23.23885,
+            "long": 69.68157
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777717800000,
+            "lat": 23.23825,
+            "long": 69.68097
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777717980000,
+            "lat": 23.23835,
+            "long": 69.68107
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777718160000,
+            "lat": 23.23845,
+            "long": 69.68117
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777718340000,
+            "lat": 23.23855,
+            "long": 69.68127
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777718520000,
+            "lat": 23.23865,
+            "long": 69.68137
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777718700000,
+            "lat": 23.23875,
+            "long": 69.68147
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777718880000,
+            "lat": 23.23885,
+            "long": 69.68157
+          },
+          {
+            "date": "01-06-2026",
+            "time": 1777719060000,
+            "lat": 23.23895,
+            "long": 69.68167
+          }
+        ]
+      }
+    }
+  },
+  "synchronization_process": [
+    {
+      "step": 1,
+      "description": "Sync Shift 1 (Rollover Shift): Starts May 31, 09:00 PM -> Ends June 1, 10:00 AM",
+      "operations": [
+        {
+          "api": "Clock-In API",
+          "direction": "request",
+          "payload": {
+            "type": "in",
+            "time": 1777669200000,
+            "lat": "23.23825",
+            "long": "69.68097"
+          },
+          "response": {
+            "status": 200,
+            "success": true,
+            "message": "Clock-In logged successfully."
+          }
+        },
+        {
+          "api": "Location Sync API (Date: 31-05-2026)",
+          "description": "Upload coordinates corresponding to Shift 1 spanned window on May 31st (1777669200000 to 1777716000000)",
+          "direction": "request",
+          "payload": {
+            "chunk_size": 7,
+            "coordinates": [
+              {
+                "time": 1777669200000,
+                "lat": 23.23825,
+                "long": 69.68097
+              },
+              {
+                "time": 1777670100000,
+                "lat": 23.23835,
+                "long": 69.68107
+              },
+              {
+                "time": 1777671000000,
+                "lat": 23.23845,
+                "long": 69.68117
+              },
+              {
+                "time": 1777671900000,
+                "lat": 23.23855,
+                "long": 69.68127
+              },
+              {
+                "time": 1777672800000,
+                "lat": 23.23865,
+                "long": 69.68137
+              },
+              {
+                "time": 1777673700000,
+                "lat": 23.23875,
+                "long": 69.68147
+              },
+              {
+                "time": 1777674600000,
+                "lat": 23.23885,
+                "long": 69.68157
+              }
+            ]
+          },
+          "response": {
+            "status": 200,
+            "success": true,
+            "message": "7 location coordinates uploaded successfully.",
+            "db_action": "DELETE location list for 31-05-2026 in Hive"
+          }
+        },
+        {
+          "api": "Location Sync API (Date: 01-06-2026)",
+          "description": "Upload coordinates corresponding to Shift 1 rollover spanned window on June 1st (up to 1777716000000)",
+          "direction": "request",
+          "payload": {
+            "chunk_size": 7,
+            "coordinates": [
+              {
+                "time": 1777680900000,
+                "lat": 23.23825,
+                "long": 69.68097
+              },
+              {
+                "time": 1777681800000,
+                "lat": 23.23835,
+                "long": 69.68107
+              },
+              {
+                "time": 1777682700000,
+                "lat": 23.23845,
+                "long": 69.68117
+              },
+              {
+                "time": 1777683600000,
+                "lat": 23.23855,
+                "long": 69.68127
+              },
+              {
+                "time": 1777684500000,
+                "lat": 23.23865,
+                "long": 69.68137
+              },
+              {
+                "time": 1777685400000,
+                "lat": 23.23875,
+                "long": 69.68147
+              },
+              {
+                "time": 1777686300000,
+                "lat": 23.23885,
+                "long": 69.68157
+              }
+            ]
+          },
+          "response": {
+            "status": 200,
+            "success": true,
+            "message": "7 location coordinates uploaded successfully.",
+            "db_action": "RETAIN remaining 8 future coordinates for 01-06-2026 in Hive"
+          }
+        },
+        {
+          "api": "Clock-Out API",
+          "direction": "request",
+          "payload": {
+            "type": "out",
+            "time": 1777716000000,
+            "lat": "23.23983",
+            "long": "69.68378"
+          },
+          "response": {
+            "status": 200,
+            "success": true,
+            "message": "Clock-Out logged successfully."
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "description": "Sync Shift 2 (Same-Day Shift): Starts June 1, 10:30 AM -> Ends June 1, 11:00 AM",
+      "operations": [
+        {
+          "api": "Clock-In API",
+          "direction": "request",
+          "payload": {
+            "type": "in",
+            "time": 1777717800000,
+            "lat": "23.23825",
+            "long": "69.68097"
+          },
+          "response": {
+            "status": 200,
+            "success": true,
+            "message": "Clock-In logged successfully."
+          }
+        },
+        {
+          "api": "Location Sync API (Date: 01-06-2026)",
+          "description": "Upload remaining coordinates corresponding to Shift 2 spanned window on June 1st (1777717800000 to 1777719600000)",
+          "direction": "request",
+          "payload": {
+            "chunk_size": 8,
+            "coordinates": [
+              {
+                "time": 1777717800000,
+                "lat": 23.23825,
+                "long": 69.68097
+              },
+              {
+                "time": 1777717980000,
+                "lat": 23.23835,
+                "long": 69.68107
+              },
+              {
+                "time": 1777718160000,
+                "lat": 23.23845,
+                "long": 69.68117
+              },
+              {
+                "time": 1777718340000,
+                "lat": 23.23855,
+                "long": 69.68127
+              },
+              {
+                "time": 1777718520000,
+                "lat": 23.23865,
+                "long": 69.68137
+              },
+              {
+                "time": 1777718700000,
+                "lat": 23.23875,
+                "long": 69.68147
+              },
+              {
+                "time": 1777718880000,
+                "lat": 23.23885,
+                "long": 69.68157
+              },
+              {
+                "time": 1777719060000,
+                "lat": 23.23895,
+                "long": 69.68167
+              }
+            ]
+          },
+          "response": {
+            "status": 200,
+            "success": true,
+            "message": "8 location coordinates uploaded successfully.",
+            "db_action": "DELETE location list for 01-06-2026 in Hive since all entries are synced"
+          }
+        },
+        {
+          "api": "Clock-Out API",
+          "direction": "request",
+          "payload": {
+            "type": "out",
+            "time": 1777719600000,
+            "lat": "23.23983",
+            "long": "69.68378"
+          },
+          "response": {
+            "status": 200,
+            "success": true,
+            "message": "Clock-Out logged successfully."
+          }
+        }
+      ]
+    }
+  ],
+  "final_state_hive": {
+    "clockInOutDataBox": {
+      "31-05-2026": [
+        {
+          "type": "in",
+          "time": 1777669200000,
+          "lat": "23.23825",
+          "long": "69.68097",
+          "isSync": true
+        },
+        {
+          "type": "out",
+          "time": 1777716000000,
+          "lat": "23.23983",
+          "long": "69.68378",
+          "isSync": true
+        }
+      ],
+      "01-06-2026": [
+        {
+          "type": "in",
+          "time": 1777717800000,
+          "lat": "23.23825",
+          "long": "69.68097",
+          "isSync": true
+        },
+        {
+          "type": "out",
+          "time": 1777719600000,
+          "lat": "23.23983",
+          "long": "69.68378",
+          "isSync": true
+        }
+      ],
+      "is_clocked_in": false
+    },
+    "locationDataBox": {}
+  },
+  "cleanup_outcome": {
+    "trigger": "Subsequent clock-in on a newer date key (e.g. 02-06-2026)",
+    "affected_keys": [
+      "31-05-2026"
+    ],
+    "action": "Box keys deleted from Hive storage after confirming all historical date entries are completely synced and finished with an 'out' entry.",
+    "state_after_cleanup": {
+      "clockInOutDataBox": {
+        "01-06-2026": [
+          {
+            "type": "in",
+            "time": 1777717800000,
+            "lat": "23.23825",
+            "long": "69.68097",
+            "isSync": true
+          },
+          {
+            "type": "out",
+            "time": 1777719600000,
+            "lat": "23.23983",
+            "long": "69.68378",
+            "isSync": true
+          }
+        ]
+      }
+    }
+  }
+}
