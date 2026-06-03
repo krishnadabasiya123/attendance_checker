@@ -241,6 +241,7 @@ class BackgroundSyncService {
     // 1. Sync the 'in' entry
     bool inSync = inRef.entry['isSync'] as bool? ?? false;
     if (!inSync) {
+      // i have to pass entry as a parameter to check the isSYnc to server or not
       inSync = await repository.clockInApiDirectly(inRef.entry);
       inRef.entry['isSync'] = inSync;
 

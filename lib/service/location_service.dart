@@ -174,15 +174,15 @@ class LocationTracker {
     //
     // forceLocationManager already blocks tower data at hardware level.
     // This gate is the final software safety net for any edge case.
-    // if (position.accuracy > 35) {
-    //   if (kDebugMode) {
-    //     print(
-    //       '❌ REJECTED (accuracy) '
-    //       '${position.accuracy.toStringAsFixed(1)}m > 35m',
-    //     );
-    //   }
-    //   return;
-    // }
+    if (position.accuracy > 35) {
+      if (kDebugMode) {
+        print(
+          '❌ REJECTED (accuracy) '
+          '${position.accuracy.toStringAsFixed(1)}m > 35m',
+        );
+      }
+      return;
+    }
 
     // ── GATE 2: STALE DATA — Budget Phone Protection ────────────────────────
     // Budget phones (Tecno, Infinix, older Samsung) take 30–50s to get a

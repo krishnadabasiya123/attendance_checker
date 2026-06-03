@@ -1,0 +1,57 @@
+Running `(cd /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/; ANDROID_HOME=/Users/shree/Library/Android/sdk TMPDIR=/var/folders/hy/s9knp0pn2c36rh4hz6x08mcw0000gn/T/ PATH=/Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin HOME=/Users/shree /Users/shree/development/flutter/bin/cache/dart-sdk/bin/dart '--packages=/Users/shree/Documents/Learning Project/attendance_system/.dart_tool/package_config.json' '/Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/objective_c/c43ab5f317/hook.dill' '--config=/Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/objective_c/c43ab5f317/input.json' )`.
+INFO: 2026-05-28 09:57:29.092336: Using compiler /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang from BuildInput.cCompiler.cc.
+
+INFO: 2026-05-28 09:57:29.097733: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 -c /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/include/dart_api_dl.c -fpic -gline-tables-only -I src -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-05-28 09:57:29.099709: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 -c /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/objective_c.c -fpic -gline-tables-only -I src -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c.c.o
+
+INFO: 2026-05-28 09:57:29.099909: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 -x objective-c -fobjc-arc -c /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/input_stream_adapter.m -fpic -gline-tables-only -I src -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-05-28 09:57:29.100138: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 -x objective-c -fobjc-arc -c /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/observer.m -fpic -gline-tables-only -I src -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/observer.m.o
+
+.m.o
+
+INFO: 2026-05-28 09:57:29.100283: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 -x objective-c -fobjc-arc -c /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/ns_number.m -fpic -gline-tables-only -I src -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/ns_number.m.o
+
+INFO: 2026-05-28 09:57:29.100612: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 -x objective-c -fobjc-arc -c /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/protocol.m -fpic -gline-tables-only -I src -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/protocol.m.o
+INFO: 2026-05-28 09:57:29.100737: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 -x objective-c -fobjc-arc -c /Users/shree/.pub-cache/hosted/pub.dev/objective_c-9.4.1/src/objective_c_bindings_generated.m -fpic -gline-tables-only -I src -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-05-28 09:57:29.458994: 
+INFO: 2026-05-28 09:57:29.459096: 
+INFO: 2026-05-28 09:57:29.459129: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/protocol.m.o
+
+INFO: 2026-05-28 09:57:29.459546: 
+INFO: 2026-05-28 09:57:29.459573: 
+INFO: 2026-05-28 09:57:29.459585: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c.c.o
+
+INFO: 2026-05-28 09:57:29.459796: 
+INFO: 2026-05-28 09:57:29.459861: 
+INFO: 2026-05-28 09:57:29.459899: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/include/dart_api_dl.c.o
+
+INFO: 2026-05-28 09:57:29.461011: 
+INFO: 2026-05-28 09:57:29.461092: 
+INFO: 2026-05-28 09:57:29.461113: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/observer.m.o
+
+INFO: 2026-05-28 09:57:29.685933: 
+INFO: 2026-05-28 09:57:29.685993: 
+INFO: 2026-05-28 09:57:29.686008: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/ns_number.m.o
+
+INFO: 2026-05-28 09:57:29.701796: 
+INFO: 2026-05-28 09:57:29.701881: 
+INFO: 2026-05-28 09:57:29.701937: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c.m.o
+
+INFO: 2026-05-28 09:57:29.704165: 
+INFO: 2026-05-28 09:57:29.704300: 
+INFO: 2026-05-28 09:57:29.704411: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/input_stream_adapter.m.o
+
+INFO: 2026-05-28 09:57:29.731332: 
+INFO: 2026-05-28 09:57:29.731370: 
+INFO: 2026-05-28 09:57:29.731385: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c_bindings_generated.m.o
+
+INFO: 2026-05-28 09:57:29.731753: Running: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -shared -Wl,-encryptable -undefined dynamic_lookup -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.4.sdk -target arm64-apple-ios -mios-version-min=13 /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/include/dart_api_dl.c.o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c.c.o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/input_stream_adapter.m.o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c.m.o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/observer.m.o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/ns_number.m.o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/protocol.m.o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/obj/src/objective_c_bindings_generated.m.o -o /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/objective_c.dylib
+
+INFO: 2026-05-28 09:57:29.900089: 
+INFO: 2026-05-28 09:57:29.900167: ld: warning: -undefined dynamic_lookup is deprecated on iOS
+
+INFO: 2026-05-28 09:57:29.900183: Generated /Users/shree/Documents/Learning Project/attendance_system/.dart_tool/hooks_runner/shared/objective_c/build/c43ab5f317/objective_c.dylib
+

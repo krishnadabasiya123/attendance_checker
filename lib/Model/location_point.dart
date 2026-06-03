@@ -13,30 +13,30 @@ class LocationPoint extends Equatable {
     required this.date,
   });
 
-  factory LocationPoint.fromJson(Map<String, dynamic> json) {
-    final rawTime = json['time'] ?? json['timestamp'];
-    DateTime parsedTime;
-    if (rawTime is int) {
-      parsedTime = DateTime.fromMillisecondsSinceEpoch(rawTime);
-    } else if (rawTime is String) {
-      final parsedInt = int.tryParse(rawTime);
-      if (parsedInt != null) {
-        parsedTime = DateTime.fromMillisecondsSinceEpoch(parsedInt);
-      } else {
-        parsedTime = DateTime.parse(rawTime);
-      }
-    } else {
-      parsedTime = DateTime.now();
-    }
+  // factory LocationPoint.fromJson(Map<String, dynamic> json) {
+  //   final rawTime = json['time'] ?? json['timestamp'];
+  //   DateTime parsedTime;
+  //   if (rawTime is int) {
+  //     parsedTime = DateTime.fromMillisecondsSinceEpoch(rawTime);
+  //   } else if (rawTime is String) {
+  //     final parsedInt = int.tryParse(rawTime);
+  //     if (parsedInt != null) {
+  //       parsedTime = DateTime.fromMillisecondsSinceEpoch(parsedInt);
+  //     } else {
+  //       parsedTime = DateTime.parse(rawTime);
+  //     }
+  //   } else {
+  //     parsedTime = DateTime.now();
+  //   }
 
-    return LocationPoint(
-      latitude: (json['lat'] as num).toDouble(),
-      longitude: (json['lon'] as num).toDouble(),
-      speed: (json['speed'] as num?)?.toDouble() ?? 0.0,
-      timestamp: parsedTime,
-      date: json['date'] as String,
-    );
-  }
+  //   return LocationPoint(
+  //     latitude: (json['lat'] as num).toDouble(),
+  //     longitude: (json['lon'] as num).toDouble(),
+  //     speed: (json['speed'] as num?)?.toDouble() ?? 0.0,
+  //     timestamp: parsedTime,
+  //     date: json['date'] as String,
+  //   );
+  // }
   final double latitude;
   final double longitude;
   final double speed;
